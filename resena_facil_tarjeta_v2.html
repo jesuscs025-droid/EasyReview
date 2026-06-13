@@ -1,0 +1,107 @@
+
+<style>
+.card-wrap { display: flex; flex-direction: column; gap: 24px; padding: 1.5rem 0; align-items: center; }
+.label { font-size: 11px; color: var(--color-text-secondary); text-align: center; margin-bottom: 8px; letter-spacing: 0.08em; text-transform: uppercase; }
+.bcard { width: 340px; height: 190px; border-radius: 12px; overflow: hidden; position: relative; }
+.front { background: #1a1f4e; display: flex; flex-direction: column; justify-content: space-between; padding: 22px 24px 18px; }
+.front-top { display: flex; align-items: flex-start; justify-content: space-between; }
+.brand { display: flex; flex-direction: column; }
+.brand-name { font-size: 19px; font-weight: 500; color: #fff; line-height: 1.2; }
+.brand-sub { font-size: 11px; color: #8d94c8; margin-top: 3px; }
+.stars-badge { display: flex; gap: 2px; }
+.star { font-size: 14px; color: #D4AF37; }
+.tagline { font-size: 11px; color: #c0c6e8; line-height: 1.5; }
+.stats-row { display: flex; gap: 16px; }
+.stat { text-align: center; }
+.stat-num { font-size: 14px; font-weight: 500; color: #D4AF37; }
+.stat-lbl { font-size: 9px; color: #8d94c8; margin-top: 1px; }
+.divider-v { width: 0.5px; background: #3d4470; }
+.back { background: #f8f7f3; border: 0.5px solid #e0ddd4; display: flex; flex-direction: column; justify-content: center; padding: 20px 26px; }
+.back-logo { font-size: 13px; font-weight: 500; color: #1a1f4e; margin-bottom: 14px; }
+.contact-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.contact-icon { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.contact-label { font-size: 9px; color: #888; }
+.contact-val { font-size: 12px; color: #1a1f4e; font-weight: 500; }
+.back-footer { margin-top: 10px; padding-top: 10px; border-top: 0.5px solid #e0ddd4; display: flex; justify-content: space-between; align-items: center; }
+.price-pill { background: #D4AF37; color: #412402; font-size: 10px; font-weight: 500; padding: 3px 10px; border-radius: 20px; }
+.no-perm { font-size: 9px; color: #888; }
+</style>
+
+<div class="card-wrap">
+
+  <div>
+    <p class="label">Anverso</p>
+    <div class="bcard front">
+      <div class="front-top">
+        <div class="brand">
+          <span class="brand-name">Reseña Fácil</span>
+          <span class="brand-sub">Multiplica tu visibilidad en Google</span>
+        </div>
+        <div class="stars-badge">
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+          <span class="star">★</span>
+        </div>
+      </div>
+
+      <div class="tagline">
+        El sistema filtra automáticamente:<br>
+        5★ → reseña pública &nbsp;·&nbsp; 1–4★ → solo para ti
+      </div>
+
+      <div style="display:flex; justify-content:space-between; align-items:flex-end;">
+        <div class="stats-row">
+          <div class="stat">
+            <div class="stat-num">300%</div>
+            <div class="stat-lbl">más reseñas</div>
+          </div>
+          <div class="divider-v"></div>
+          <div class="stat">
+            <div class="stat-num">1er lugar</div>
+            <div class="stat-lbl">en Google</div>
+          </div>
+          <div class="divider-v"></div>
+          <div class="stat">
+            <div class="stat-num">15 seg</div>
+            <div class="stat-lbl">por reseña</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <p class="label">Reverso</p>
+    <div class="bcard back">
+      <div class="back-logo">★★★★★ Reseña Fácil</div>
+
+      <div class="contact-row">
+        <div class="contact-icon" style="background:#25D366;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+        </div>
+        <div>
+          <div class="contact-label">WhatsApp</div>
+          <div class="contact-val">651 580 018</div>
+        </div>
+      </div>
+
+      <div class="contact-row">
+        <div class="contact-icon" style="background:#1a1f4e;">
+          <i class="ti ti-mail" style="color:white; font-size:14px;" aria-hidden="true"></i>
+        </div>
+        <div>
+          <div class="contact-label">Correo</div>
+          <div class="contact-val">jesuscs025@gmail.com</div>
+        </div>
+      </div>
+
+      <div class="back-footer">
+        <span class="price-pill">99€/mes · Sin permanencia</span>
+        <span class="no-perm">Anual: 83€/mes</span>
+      </div>
+    </div>
+  </div>
+
+</div>
